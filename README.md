@@ -1,5 +1,3 @@
-# Todo_API
-
 ## Execution :
   ```sh
   $ git clone https://github.com/vkartik97/Todo_API.git
@@ -14,7 +12,11 @@
       $ go build .
       $ ./Todo_API
   ```
-  
+**Port Number can be changed in `main.go`**
+```go
+log.Fatal(http.ListenAndServe(":8000", nil))
+```
+Replace 8000 with any Port Number
 ## API Endpoints :
   - ### Creating a List<br>
     Get Request<br>
@@ -41,4 +43,4 @@
     `localhost:8000/update?list=Listname&&id=TaskID&&status=New-Status`
   - ### Delete a List<br>
     Get Request<br>
-    `llocalhost:8000/deletelist?list=ListName`
+    `localhost:8000/deletelist?list=ListName`
