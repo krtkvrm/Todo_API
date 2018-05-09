@@ -10,15 +10,17 @@
     $ docker container run -d -p 8000:8000 username/go-api
     ```
   - ### Without Docker :
-    - `$ go build .`
-    - `$ ./Todo_API`
+  ```sh
+      $ go build .
+      $ ./Todo_API
+  ```
   
 ## API Endpoints :
   - ### Creating a List<br>
-    Get Request
+    Get Request<br>
     `localhost:8000/create?list=listname`
   - ### Get Todos in a List<br>
-    Get Request
+    Get Request<br>
     `localhost:8000/get?list=new`
   - ### Add Todos to a List<br>
     POST Request <br>
@@ -32,8 +34,11 @@
     }
     ```
   - ### Delete Todos in a List<br>
+    Get Request<br>
     `localhost:8000/deletetask?list=Listname&&id=TaskID`
   - ### Update Todos in a List<br>
+    Get Request<br>
     `localhost:8000/update?list=Listname&&id=TaskID&&status=New-Status`
   - ### Delete a List<br>
+    Get Request<br>
     `llocalhost:8000/deletelist?list=ListName`
